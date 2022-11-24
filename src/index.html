@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>API project</title>
+</head>
+<body>
+    
+    <header class="grid grid-cols-12 bg-gray-300">
+        <div class="h-full flex justify-center items-center bg-red-500 col-span-3">
+            <h3 class="text-gray-800 font-bold text-2xl">Favorite Songs</h3>
+        </div>
+        <div class="col-span-9 p-7">
+            <h1 class="text-gray-800 mb-2 font-bold text-2xl"><span class="text-red-500">YouTube Music</span> API</h1>
+            <input id="search" value="" type="text" class="shadow appearance-none border rounded w-[20rem] py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Artist/Song" type="text">
+        </div>
+    </header>
+    
+    <main class="grid grid-cols-12">
+        <!-- ============ ASIDE ============ -->
+        <aside class="h-screen col-span-3 overflow-auto bg-gray-800">
+            <div id="favoriteSongsContent" class="py-10 grid grid-cols-1 gap-2 justify-items-center">
+                <!-- Card songs favorite -->
+            </div>
+        </aside>
+
+        <!-- ============ SECTION ============ -->
+        <section  class="h-screen col-span-9 bg-gradient-to-r from-pink-600 to-yellow-600 overflow-x-auto">
+            <div id="contentSongs" class="relative py-10 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 justify-items-center">
+                <div id="emptyCard" class="relative bg-transparent w-[15rem] h-[17rem] my-2 rounded-xl text-white border-4 border-gray-800">
+                    <button id="loadMoreSongs" class="absolute z-10 text-xl font-bold bg-transparent rounded-bl-md rounded-md w-full h-full"><span>Add more</span> +</button>
+                </div>
+                <!-- Card songs -->
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="h-40 bg-gray-300 flex justify-center items-center flex-col gap-6">
+        <h5 class="text-gray-800 text-4xl font-bold">Cesar <span class="text-red-600">Vargas</span></h5>
+        <div class="flex flex-row gap-8">
+            <a href="https://github.com/CesarV28" target="_blank">
+                <i class="text-4xl text-gray-800 hover:text-gray-900 cursor-pointer fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/varcesar/" target="_blank">
+                <i class="text-4xl text-gray-800 hover:text-gray-900 cursor-pointer fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="text-4xl text-gray-800 hover:text-gray-900 cursor-pointer fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
